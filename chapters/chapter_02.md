@@ -1,5 +1,7 @@
 # 第02章 三大核心概念:Resources、Tools、Prompts
 
+> 作者：**光谷老亢**　|　源码地址：[https://github.com/kang-airtc/mcp-mini-book](https://github.com/kang-airtc/mcp-mini-book)
+
 <!-- status: writing -->
 
 上一章把 MCP 协议的定位与诞生背景讲清楚之后,本章进入它的能力模型。一个 MCP Server 究竟能“暴露什么”给 Client?这正是 MCP 与早期工具协议拉开差距的地方。

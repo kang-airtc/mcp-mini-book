@@ -1,5 +1,7 @@
 # 第06章 Tool能力实现
 
+> 作者：**光谷老亢**　|　源码地址：[https://github.com/kang-airtc/mcp-mini-book](https://github.com/kang-airtc/mcp-mini-book)
+
 <!-- status: writing -->
 
 数据层就绪后,本章把 5 个 Tool 的实现逐一接到 SQLite 工单库上。Tool 是 MCP 三大能力中最常用的一个,也是模型与外部世界发生交互的核心入口。

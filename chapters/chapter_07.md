@@ -1,5 +1,7 @@
 # 第07章 Resource与Prompt实现
 
+> 作者：**光谷老亢**　|　源码地址：[https://github.com/kang-airtc/mcp-mini-book](https://github.com/kang-airtc/mcp-mini-book)
+
 <!-- status: writing -->
 
 上一章把 5 个 Tool 接上后,Server 已具备执行动作的能力。本章给 Server 补上数据资源(2 个 Resource)与提示模板(2 个 Prompt)两类能力,完成整个 Server 的能力面。

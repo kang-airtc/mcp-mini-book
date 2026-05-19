@@ -1,5 +1,7 @@
 # 第01章 MCP协议的定位与价值
 
+> 作者：**光谷老亢**　|　源码地址：[https://github.com/kang-airtc/mcp-mini-book](https://github.com/kang-airtc/mcp-mini-book)
+
 <!-- status: writing -->
 
 在 AI 应用开发中,语言模型本身只能处理文本,要让模型查询数据库、读取文件、调用外部接口,必须借助某种工具协议将能力暴露给模型。过去几年,各类 Agent 框架与 IDE 助手各自定义了一套工具调用规范,导致同一个功能往往需要为不同生态分别封装,集成成本随接入对象数量线性上升。

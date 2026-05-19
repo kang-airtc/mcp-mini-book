@@ -1,5 +1,7 @@
 # 第04章 开发环境与项目骨架
 
+> 作者：**光谷老亢**　|　源码地址：[https://github.com/kang-airtc/mcp-mini-book](https://github.com/kang-airtc/mcp-mini-book)
+
 <!-- status: writing -->
 
 前三章把 MCP 的定位、能力模型、传输层逐一交代清楚,本章进入实战准备阶段,从空白目录开始,把开发环境搭起来。

@@ -1,5 +1,7 @@
 # 第03章 传输层:stdio、HTTP/SSE与JSON-RPC
 
+> 作者：**光谷老亢**　|　源码地址：[https://github.com/kang-airtc/mcp-mini-book](https://github.com/kang-airtc/mcp-mini-book)
+
 <!-- status: writing -->
 
 上一章讲清了 MCP 暴露什么,本章讨论它怎么传送。Resources、Tools、Prompts 三类能力的调用请求与响应,究竟以什么样的报文格式在 Client 与 Server 之间流动?

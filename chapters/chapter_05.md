@@ -1,5 +1,7 @@
 # 第05章 数据层设计:SQLite工单库
 
+> 作者：**光谷老亢**　|　源码地址：[https://github.com/kang-airtc/mcp-mini-book](https://github.com/kang-airtc/mcp-mini-book)
+
 <!-- status: writing -->
 
 上一章把工程骨架搭起来,本章给骨架填数据。MCP Server 本质上是个“把外部数据变成模型可读形态”的中间层,所以一切 Tool 与 Resource 的实现都要先回答一个前置问题:数据从哪里来?

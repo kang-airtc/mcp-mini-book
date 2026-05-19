@@ -1,5 +1,7 @@
 # 第09章 HTTP/SSE模式改造与多客户端
 
+> 作者：**光谷老亢**　|　源码地址：[https://github.com/kang-airtc/mcp-mini-book](https://github.com/kang-airtc/mcp-mini-book)
+
 <!-- status: writing -->
 
 上一章把 stdio 模式的端到端链路跑通,但 stdio 的边界也很明显,单机、单 Client、随 Client 启停。本章把 Server 改造为 HTTP/SSE 模式,解锁多 Client 共享与远程部署。

@@ -1,5 +1,7 @@
 # 第08章 stdio客户端实战
 
+> 作者：**光谷老亢**　|　源码地址：[https://github.com/kang-airtc/mcp-mini-book](https://github.com/kang-airtc/mcp-mini-book)
+
 <!-- status: writing -->
 
 Server 端能力齐全后,本章把 Client 端实现接上,完成最小可运行的端到端链路。一个 MCP Server 即使写得再完整,没有 Client 来调用,所有能力都还停留在“声明”层面;唯有 Client 把这些能力调起来,链路才算闭环。

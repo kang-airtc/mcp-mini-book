@@ -1,5 +1,7 @@
 # 第10章 接入OpenCode与调试排错
 
+> 作者：**光谷老亢**　|　源码地址：[https://github.com/kang-airtc/mcp-mini-book](https://github.com/kang-airtc/mcp-mini-book)
+
 <!-- status: writing -->
 
 前九章把 MCP Server 与 Client 都跑通,但所有验证都通过命令行脚本完成,Server 暴露的能力还没有真正进入 AI 工作流。本章把整套服务接入 OpenCode 这一开源终端 AI 编程助手,让 Tool 与 Resource 在真实对话中被调用。
