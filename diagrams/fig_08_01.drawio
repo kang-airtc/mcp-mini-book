@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="c1" value="1. fork 子进程" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="30" width="240" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="s1" value="进入 mcp.run() 监听" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="330" y="30" width="240" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="c2" value="2. session.initialize()" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="130" width="240" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="s2" value="协议握手响应" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="330" y="130" width="240" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="c3" value="3. list_tools / resources / prompts" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="230" width="240" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="s3" value="返回能力清单" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="330" y="230" width="240" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="c4" value="4. call_tool(name, args)" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="330" width="240" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="s4" value="执行 SQL → JSON 结果" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="330" y="330" width="240" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="c5" value="5. read_resource(uri)" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="430" width="240" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="s5" value="返回资源内容" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;fontSize=12;" vertex="1" parent="1">
+      <mxGeometry x="330" y="430" width="240" height="60" as="geometry" />
+    </mxCell>
+    <mxCell id="h1" style="exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="c1" target="s1">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="h2" style="exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="c2" target="s2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="h3" style="exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="c3" target="s3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="h4" style="exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="c4" target="s4">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="h5" style="exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="1" source="c5" target="s5">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="v1" style="exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#999999;dashed=1;" edge="1" parent="1" source="s1" target="s2">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="v2" style="exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#999999;dashed=1;" edge="1" parent="1" source="c2" target="c3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="v3" style="exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#999999;dashed=1;" edge="1" parent="1" source="c3" target="c4">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="v4" style="exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=block;endFill=1;strokeWidth=1;strokeColor=#999999;dashed=1;" edge="1" parent="1" source="c4" target="c5">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>

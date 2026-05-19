@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="user" value="终端用户" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="340" y="20" width="120" height="50" as="geometry" />
+    </mxCell>
+    <mxCell id="host" value="宿主程序 (Agent 或 IDE)" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="130" width="720" height="180" as="geometry" />
+    </mxCell>
+    <mxCell id="llm" value="LLM (语言模型)" style="rounded=1;whiteSpace=wrap;fillColor=#E8F4FD;strokeColor=#4A4A4A;fontColor=#333333;fontSize=12;" vertex="1" parent="host">
+      <mxGeometry x="80" y="60" width="240" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="client" value="MCP Client" style="rounded=1;whiteSpace=wrap;fillColor=#E8F4FD;strokeColor=#4A4A4A;fontColor=#333333;fontSize=12;" vertex="1" parent="host">
+      <mxGeometry x="400" y="60" width="240" height="80" as="geometry" />
+    </mxCell>
+    <mxCell id="server" value="MCP Server" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;fontSize=13;fontStyle=1;" vertex="1" parent="1">
+      <mxGeometry x="40" y="380" width="720" height="140" as="geometry" />
+    </mxCell>
+    <mxCell id="res" value="Resources (资源)" style="rounded=1;whiteSpace=wrap;fillColor=#E8F4FD;strokeColor=#4A4A4A;fontColor=#333333;fontSize=12;" vertex="1" parent="server">
+      <mxGeometry x="30" y="50" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="tools" value="Tools (工具)" style="rounded=1;whiteSpace=wrap;fillColor=#E8F4FD;strokeColor=#4A4A4A;fontColor=#333333;fontSize=12;" vertex="1" parent="server">
+      <mxGeometry x="260" y="50" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="prompts" value="Prompts (提示)" style="rounded=1;whiteSpace=wrap;fillColor=#E8F4FD;strokeColor=#4A4A4A;fontColor=#333333;fontSize=12;" vertex="1" parent="server">
+      <mxGeometry x="490" y="50" width="200" height="70" as="geometry" />
+    </mxCell>
+    <mxCell id="e1" value="输入" style="exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#666666;fontSize=11;" edge="1" parent="1" source="user" target="host">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e2" value="Function Calling" style="exitX=1;exitY=0.33;entryX=0;entryY=0.33;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#666666;fontSize=11;" edge="1" parent="host" source="llm" target="client">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e3" style="exitX=0;exitY=0.67;entryX=1;entryY=0.67;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#666666;" edge="1" parent="host" source="client" target="llm">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e4" value="MCP 协议" style="exitX=0.5;exitY=1;entryX=0.5;entryY=0;endArrow=block;endFill=1;strokeWidth=2;strokeColor=#666666;fontSize=11;" edge="1" parent="1" source="host" target="server">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
