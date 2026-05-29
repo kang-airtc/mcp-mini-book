@@ -2,7 +2,7 @@
 
 作者：**亢AIRTC**
 
-请关注 B站 [光谷老亢](https://space.bilibili.com/394612055) 视频教程，学习更多 AI、RTC 等知识。
+请关注 B站 [亢AIRTC](https://space.bilibili.com/394612055) 视频教程，学习更多 AI、RTC 等知识。
 
 ---
 
